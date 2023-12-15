@@ -1,3 +1,4 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13163783&assignment_repo_type=AssignmentRepo)
 # Traveling Salesperson Problem -- Held-Karp Algorithm
 
 This exercise is about the Traveling Salesperson Problem I mentioned in the
@@ -46,3 +47,8 @@ Test your new function; I've provided some basic testing code in `code.test.js`.
 What is the worst-case asymptotic time complexity of your implementation? What
 is the worst-case asymptotic memory complexity? Add your answer, including your
 reasoning, to this markdown file.
+
+The worst-case time complexity would be $|V^2|$ since we would iterate through $V$ in the outer loop in the main function, which calls heldkarp that executes another loop of $|V| iterations. 
+In terms of worst-case memory complexity would be $|V|$ since it would store at max a key for each city, or rather each vertex. 
+
+Used wyo-kaitlyn's and countmooshroom's code for reference. 
